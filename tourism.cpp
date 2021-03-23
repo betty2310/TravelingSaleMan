@@ -26,7 +26,7 @@ void trySolve(int i) {
         if(a[j]) { //tp chua di qua
             x[i] = j;
             t[i] = t[i - 1] + c[x[i - 1]][j]; //cost luc nay
-            if(t[i] < minCost) {
+            if(t[i] < minCost) { //hi vong tim dc config tot hon
                 if(i < n) {
                     a[j] = false;
                     trySolve(i + 1);
